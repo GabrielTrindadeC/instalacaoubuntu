@@ -1,0 +1,81 @@
+--------------------------------------------------------------------------------------------
+Instalação do Git
+sudo apt install git
+
+Instalação do Postman
+apt update
+sudo snap install postman
+-------------------se caso o snap não esteja instalado--------------------------------------
+apt install snapd
+snap install postman
+--------------------------------------------------------------------------------------------
+Instalação do MongoDB
+curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+
+sudo apt update
+
+sudo apt install mongodb-org
+--------------------------------------------------------------------------------------------
+Instalação do Compass
+wget https://downloads.mongodb.com/compass/mongodb-compass_1.26.1_amd64.deb 
+ sudo apt install./mongodb-compass_1.26.1_amd64.deb 
+
+--------------------------------------------------------------------------------------------
+Instalação NodeJS
+sudo apt update
+sudo apt install nodejs
+nodejs -v // se a versao for 10.19 usar tbem o comando abaixo
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+--------------------------------------------------------------------------------------------
+Instalação do NPM 
+sudo apt install npm
+--------------------------------------------------------------------------------------------
+Instalação Visual Studio Code
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add –
+
+sudo add-apt-repository “deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main”
+
+sudo apt install code
+--------------------------------------------------------------------------------------------
+Instalação Expo
+npm install --global expo-cli
+
+--------------------------------------------------------------------------------------------
+Instalação Spotify
+sudo sh -c "echo 'deb http://repository.spotify.com stable non-free' >> /etc/apt/sources.list.d/spotify.list"
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+
+sudo apt-get update
+
+sudo apt-get install spotify-client
+---------------------------------------------------------------------------------------------
+Instalação do Genymotion
+sudo apt install virtualbox
+https://www.genymotion.com/download/ // Site para baixar o .bin
+cd ~/Downloads/
+chmod +x genymotion-versaoquevocebaixou.bin
+./genymotion-3.1.0-linux_x64.bin
+Para Rodar ~/genymotion/genymotion
+---------------------------------------------------------------------------------------------
+Instalação da SDK
+sudo apt update && sudo apt install android-sdk
+---------------------------------------------------------------------------------------------
+dentro do Genymotion
+depois de criar o emulador
+ir em settings -> em ADB -> Use custom Android SKD Tools -> colocar esse caminho /usr/lib/android-sdk
+---------------------------------------------------------------------------------------------
+Instalação do Slack
+snap install slack --classic
+---------------------------------------------------------------------------------------------
+Instalação do Zoom
+wget https://zoom.us/client/latest/zoom_amd64.deb -O zoom.deb
+sudo dpkg -i zoom.deb
+sudo apt-get install -f
+
